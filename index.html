@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+     <p id="errormsg" class="basefont msg error">Please fill all the required fields</p> 
+    <p id="successmsg" class="basefont msg success">Successfully signed up</p>
+
+    <section class="container"> 
+        <section class="sub">
+
+            <section id="signup" class="subconsign">
+
+                <div class="title">
+                    <p>Sign up</p>
+                </div>
+
+                <div class="inputs">
+                    <div>
+                        <label for="name">Name</label>
+                    </div>
+                    <input type="text" name="sname" id="sname" placeholder="John">
+                    <p id="nameerror" class="basefont" style="font-size: 0.7em; color: red;  font-weight: bold;"></p>
+                </div>
+
+                <div class="inputs">
+                    <div>
+                        <label for="email">Email</label>
+                    </div>
+                    <input type="email" name="semail" id="semail" placeholder="example@gmail.com">
+                    <p id="emailerror" class="basefont" style="font-size: 0.7em; color: red;  font-weight: bold;"></p>
+                </div>
+
+                <div class="inputs">
+                    <div>
+                        <label for="password">Password</label>
+                    </div>
+                    <input type="password" name="spassword" id="spassword">
+                    <div class="items">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                    </div>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" name="" id="agree">
+                    <p class="basefont">I agree with <span style="color: blue; font-weight: bolder;">Terms</span> and
+                        <span style="color: blue; font-weight: bold;">Privacy</span>
+                    </p>
+                </div>
+                <p id="agreeerror" class="basefont" style="font-size: 0.7em; color: red;  font-weight: bold;"></p>
+
+                <div class="button">
+                    <button id="signsubmit">
+                        Sign up
+                    </button>
+                </div>
+
+
+                <div style="border-bottom: 1px solid    gray; height: 40px;">
+
+                </div>
+
+                <div style="display: flex; justify-content: center; ">
+                    <p class="basefont" style="color: gray; font-weight: bold;">Already have an account?</p>
+                </div>
+
+
+                <div style="display: flex; justify-content: center; ">
+                    <p id="loginbtn" class="basefont log" style="color: blue; font-weight: bold;">Log in</p>
+                </div>
+            </section>
+        </section>
+
+
+
+
+        <section class="sub sub2">
+
+            <section id="login" class="subconlog">
+                <div class="title">
+                    <p>Log in</p>
+                </div>
+
+
+                <div class="inputs">
+                    <div>
+                        <label for="email">Email</label>
+                    </div>
+                    <input type="email" name="lemail" id="lemail" placeholder="example@gmail.com">
+                </div>
+
+                <div class="inputs">
+                    <div>
+                        <label for="password">Password</label>
+                    </div>
+                    <input type="password" name="lpassword" id="lpassword">
+
+                </div>
+
+                <div class="check">
+                    <input style="width: 20px;" type="checkbox" name="" id="">
+                    <p style="font-size: 1.2em;" class="basefont">Remember me</p>
+                </div>
+
+
+                <div class="button">
+                    <button id="lgnbtn">
+                        Log in
+                    </button>
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 20px;">
+                    <p class="basefont" style="color: blue; font-weight: bold; font-weight: bold; font-size: 1.3em;">
+                        Forgot
+                        Password?</p>
+                </div>
+
+                <div style="border-bottom: 1px solid gray; height: 40px;">
+
+                </div>
+
+                <div style="display: flex; justify-content: center; ">
+                    <p class="basefont" style="color: gray; font-weight: bold;">Don't have an account?</p>
+                </div>
+
+
+                <div style="display: flex; justify-content: center; ">
+                    <p id="signupbtn" class="basefont log" style="color: blue; font-weight: bold;">Sign up</p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
